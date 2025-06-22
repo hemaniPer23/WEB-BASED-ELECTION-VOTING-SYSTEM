@@ -9,10 +9,8 @@ const EnterIdPage = () => {
   const handleConfirm = (e) => {
     e.preventDefault();
 
-    // Optional: validate ID format here
-
     if (idNumber.trim() !== "") {
-      navigate("/admininterface");
+      navigate("/votersummary"); // ✅ Go to VoterSummary page
     } else {
       alert("Please enter a valid ID number.");
     }
