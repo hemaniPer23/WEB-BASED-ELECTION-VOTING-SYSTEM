@@ -9,6 +9,8 @@ import Regestation from "./Regestation";
 import RegestationCandidate from "./RegestationCandidate";
 import Choose from "./Choose";
 import AdminInterface from "./AdminInterface";
+import VoterConfirm from "./VoterConfirm";
+import VoterSummary from "./VoterSummary";
 
 
 
@@ -22,6 +24,8 @@ function App() {
        <Route path="/registrationcandidate" element={<RegestationCandidate />} />
         <Route path="/choose" element={<Choose />} />
         <Route path="/admininterface" element={<AdminInterface />} />
+         <Route path="/voterconfirm" element={<VoterConfirm />} />
+           <Route path="/votersummary" element={<VoterSummary />} />
 
 
        
