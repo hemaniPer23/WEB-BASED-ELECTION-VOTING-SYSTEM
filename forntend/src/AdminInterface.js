@@ -11,13 +11,13 @@ export default function Admin() {
       <h1 className="admin-title">Admin Page</h1>
       <div className="button-group">
         <button onClick={() => navigate('/choose')} className="admin-btn">
-          Go Registration
+          ලියාපදිංචි කිරීම <br/> Go Registration
         </button>
         <button onClick={() => navigate('/voting')} className="admin-btn">
-          Go Voting
+          චන්දය ප්‍රකාශ කිරීම <br/>Go Voting
         </button>
         <button onClick={() => navigate('/view-result')} className="admin-btn">
-          Go View Result
+          ප්‍රතිඵල නිරීක්ෂණය <br/>Go View Result
         </button>
       </div>
     </div>
