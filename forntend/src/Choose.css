@@ -1,0 +1,82 @@
+.choose-container {
+  /* Clear background image without overlay */
+  background-image: url('./image/Flag2.jpg'); /* Use your actual path */
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  min-height: 100vh;
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* rest of your CSS unchanged */
+
+.choose-title {
+  font-size: 32px;
+  font-weight: bold;
+  color: #2c3e50;
+  margin-bottom: 40px;
+}
+
+.button-group {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 300px;
+  align-items: center;
+}
+
+.reg-button {
+  width: 100%;
+  padding: 15px;
+  font-size: 18px;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* 🎯 Candidate Button */
+.candidate-button {
+  background-color: #00796b;
+}
+.candidate-button:hover {
+  background-color: #004d40;
+}
+
+/* 🎯 Voter Button */
+.form-button {
+  background-color: #1976d2;
+}
+.form-button:hover {
+  background-color: #125ca1;
+}
+
+/* 🎯 Admin Interface Button */
+.admininterface {
+  background-color: #c62828;
+  padding: 15px;
+  font-size: 18px;
+  border-radius: 8px;
+  color: white;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+.admininterface:hover {
+  background-color: #8e0000;
+}
+
+/* Footer */
+.footer {
+  margin-top: 60px;
+  font-size: 0.9em;
+  color: #555;
+  text-align: center;
+}
