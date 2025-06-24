@@ -1,0 +1,117 @@
+/* Full Page Background with Overlay */
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url('https://images.unsplash.com/photo-1579547621706-1a9c79d5cca4'); /* Replace with your preferred image */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Optional Dark Overlay for better text visibility */
+body::before {
+  content: '';
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 0;
+}
+
+/* Dashboard Container */
+.dashboard-container {
+  max-width: 550px;
+  padding: 25px;
+  background-color: rgba(255, 255, 255, 0.95);
+  border-radius: 20px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+/* Title */
+.dashboard-title {
+  font-size: 38px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+/* Info Cards */
+.info-card {
+  margin-bottom: 20px;
+  padding: 15px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.07);
+}
+
+.info-text {
+  font-size: 22px;
+  margin-bottom: 10px;
+  color: #444;
+}
+
+.info-text span {
+  font-weight: bold;
+  color: #111;
+}
+
+/* Buttons */
+.btn {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+}
+
+.btn.register {
+  background-color: #28a745;
+}
+
+.btn.register:hover {
+  background-color: #218838;
+}
+
+.btn.vote {
+  background-color: #007bff;
+}
+
+.btn.vote:hover {
+  background-color: #0069d9;
+}
+
+/* Chart Section */
+.chart-section {
+  margin-top: 30px;
+}
+
+.voting-rate {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #555;
+}
+
+.voting-rate span {
+  color: #7e22ce;
+  font-weight: bold;
+}
+.dashboard-main-title {
+  font-size: 40px;
+  font-weight: bold;
+  color: #1f2937;
+  margin-bottom: 20px;
+}
