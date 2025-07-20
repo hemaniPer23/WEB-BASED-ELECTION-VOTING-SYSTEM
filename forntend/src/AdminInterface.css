@@ -1,0 +1,78 @@
+.admin-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 40px 20px;
+  position: relative;
+  background-image: url('./image/Flag1.jpg'); /* Your background image */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white; /* Text color for contrast */
+  z-index: 1;
+  overflow: hidden;
+}
+
+/* Add a dark overlay for better text visibility */
+.admin-container::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0, 0, 0, 0.5); /* semi-transparent black */
+  z-index: -1;
+}
+
+.admin-title {
+  font-size: 3rem;
+  margin-bottom: 100px;
+  font-weight: 700;
+  text-align: center;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.7);
+  max-width: 90%;
+}
+
+.button-group {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  width: 280px;
+  max-width: 90%;
+}
+
+.admin-btn {
+  padding: 15px 0;
+  font-size: 1.2rem;
+  background-color: #1976d2;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 600;
+  box-shadow: 0 4px 8px rgba(25, 118, 210, 0.5);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.admin-btn:hover,
+.admin-btn:focus {
+  background-color: #125ca1;
+  box-shadow: 0 6px 12px rgba(18, 92, 161, 0.7);
+  outline: none;
+}
+
+/* Responsive adjustments */
+@media (max-width: 480px) {
+  .admin-title {
+    font-size: 2rem;
+    margin-bottom: 70px;
+  }
+
+  .button-group {
+    width: 100%;
+  }
+
+  .admin-btn {
+    font-size: 1rem;
+  }
+}
